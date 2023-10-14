@@ -1,83 +1,52 @@
-body {
+body{
     background-color: #E6F9E1;
-}
-
-.container {
-  display: flex;
-  font-family: "Gabarito", sans-serif;
-  justify-content: center;
-  align-items: end;
-  height: 40vh;
-  margin-bottom: 60px;
-  width: 100%;
-}
-.gif{
-  height: 170px;
-  width: 270px;
-  border-radius: 20%;
-}
-#gif{
-  display: flex;
-  justify-content: center;
-  height: 1vh;
-  margin: 20px 100px 0 0;
+    color: #101902;
+    font-family: "Gabarito", sans-serif;
 }
 .portfolio{
+    font-weight: bold;
+    text-align: center;
+    margin-right: 20px;
+}
+.gif{
+    height: 170px;
+    width: 170px;
+}
+#gif{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    font-family: "Gabarito", sans-serif;
-    font-weight: 900;
-    color: black;
+    height: 20vh;
 }
-.hr-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hr-container hr {
-  width: 100%;
-  border: 1px solid black;
-  margin-top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-}
-.left{
-    color: #101902;
-    font-weight: 600;
+.container1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 50px;
+    height: 30vh;
 }
 p.left{
-  margin-right: 20px;
-  margin-bottom: 10px;
-  transform: rotate(270deg);
-  font-weight: 100;
+    margin-right: 20px;
+    transform: rotate(270deg);
 }
-h1 {
-  margin: 0 100px 0 0;
-  cursor: pointer;
+h1.left{
+    margin-right: 100px;
+    cursor: pointer;
 }
 h1.left:hover{
-    border: 2px white;
     background-color: black;
     color: white;
     transform: scale(1.1);
     padding: 10px;
 }
+.hr-container hr{
+    border: 0.5px solid black;
+}
 .container2{
-    font-family: "Gabarito", sans-serif;
-    color: #101902;
-    font-weight: 600;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    font-size: large;
-    width: 100%;
-}
-p.right{
-    margin-right: 100px;
-    text-align: center;
 }
 span{
     color: #19C862;
@@ -86,76 +55,35 @@ span{
     display: flex;
     gap: 10px;
     justify-content: center;
-    margin-top: 30px;
-    margin-right: 110px;
+    margin: 10px 4px 0 0;
 }
 .github:hover{
-  transform: scale(1.1);
-}
+    transform: scale(1.1);
+  }
 .twitter:hover{
-  transform: scale(1.1);
-}
+    transform: scale(1.1);
+  }
 .linkedin:hover{
-  transform: scale(1.1);
-}
+    transform: scale(1.1);
+  }
 .email:hover{
-  transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+@media screen and (orientation: portrait) {
+    *{
+        font-size: 16px;
+    }
+    .container1{
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        text-align: left;
+        margin: 0 0 0 0;
+        position: relative;
+    }
+    .hr-container hr{
+        margin-top: 160px;
+    }
 }
-@media (max-width: 1016px){
-  .container{
-    margin: 10px;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    max-width: none;
-  }
-  .container2{
-    display: flex;
-    align-items: center;
-  }
-  .logos{
-    display: flex;
-    justify-content: center;
-  }
-  .portfolio{
-    display: flex;
-    text-align: center;
-}
-}
-@media (max-width: 575px){
-  p{
-    font-size: 16px;
-    text-align: left;
-  }
-  .gif{
-    height: 100px;
-    width: 150px;
-    margin-right: 0%;
-    margin-left: 300px;
-  }
-  #gif{
-    display: flex;
-    justify-content: right;
-  }
-  .container{
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    max-width: none;
-  }
-  .hr-container{
-    margin-top: 40px;
-  }
-  .portfolio{
-    display: flex;
-    justify-content: center;
-  }
-  .logos{
-    display: flex;
-    justify-content: center;
-  }
-}
+  
