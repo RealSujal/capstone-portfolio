@@ -36,6 +36,7 @@ h1.left{
 h1.left:hover{
     background-color: black;
     color: white;
+    box-shadow: 3px 4px 2px #19C862;
     transform: scale(1.1);
     padding: 10px;
 }
